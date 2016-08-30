@@ -1,0 +1,22 @@
+{
+  "name": "Sample Fetch Bug",
+  "description": "Press Ctrl+Shift+U to fetch samples (Command+Shift+U on a Mac).",
+  "manifest_version": 2,
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "applications": {
+    "gecko": {
+      "id": "commands@mozilla.org",
+      "strict_min_version": "48.0a1"
+    }
+  },
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": { "default": "Ctrl+Shift+U" },
+      "description": "Execute fetch samples"
+    }
+  },
+  "permissions": ["*://www.google.fr/*", "*://localhost:8000/*"]
+}
